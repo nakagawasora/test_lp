@@ -1,36 +1,63 @@
-# Astro Starter Kit: Basics
+# 晃商HD 京大生限定長期インターン LP
+
+株式会社晃商HDが実施する、京大生限定長期インターンシップのテストLPです。
+
+参照サイト: https://www.k-kosho.co.jp/
+
+## 概要
+
+Astroで作成した1ページ構成のランディングページです。
+晃商コーポレートサイトの「みがく｡」というコピー、余白感、写真を大きく扱う構成を踏襲しつつ、青基調の採用LPとして調整しています。
+
+## 再現方法
+
+Node.js 22.12.0以上が必要です。
+
+1. 依存関係をインストールします。
 
 ```sh
-npm create astro@latest -- --template basics
+npm install
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+2. 開発サーバーを起動します。
 
-## 🚀 Project Structure
+```sh
+npm run dev
+```
 
-Inside of your Astro project, you'll see the following folders and files:
+3. ブラウザで次のURLを開きます。
+
+```text
+http://localhost:4321/
+```
+
+4. 本番用の静的ファイルを生成する場合は、次を実行します。
+
+```sh
+npm run build
+```
+
+5. 生成結果をローカルで確認する場合は、次を実行します。
+
+```sh
+npm run preview
+```
+
+## 主なファイル
 
 ```text
 /
-├── public/
-│   └── favicon.svg
 ├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
 │   ├── layouts
-│   │   └── Layout.astro
+│   │   └── Layout.astro   # 共通HTML、meta、charset、title
 │   └── pages
-│       └── index.astro
+│       └── index.astro    # LP本体とページ固有CSS
 └── package.json
 ```
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+## 利用コマンド
 
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
+すべてプロジェクトルートで実行します。
 
 | Command                   | Action                                           |
 | :------------------------ | :----------------------------------------------- |
@@ -40,7 +67,3 @@ All commands are run from the root of the project, from a terminal:
 | `npm run preview`         | Preview your build locally, before deploying     |
 | `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).

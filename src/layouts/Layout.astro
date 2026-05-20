@@ -1,12 +1,20 @@
+---
+const {
+	title = '京大生限定長期インターンシップ | 株式会社晃商HD',
+	description = '株式会社晃商HDが実施する、京大生限定の長期インターンシップ募集ページです。',
+} = Astro.props;
+---
+
 <!doctype html>
-<html lang="en">
+<html lang="ja">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<link rel="icon" href="/favicon.ico" />
+		<meta name="description" content={description} />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		<title>{title}</title>
 	</head>
 	<body>
 		<slot />
