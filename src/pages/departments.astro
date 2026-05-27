@@ -1,0 +1,137 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const logoUrl = 'https://www.k-kosho.co.jp/common/img/logo_main.png';
+const officeImageUrl = 'https://www.k-kosho.co.jp/img/ph_sec07_02.jpg';
+---
+
+<Layout
+	page="departments"
+	title="部署紹介 | 京大生限定長期インターンシップ | 株式会社晃商HD"
+	description="システム課、広報課、労務課、新規事業立ち上げ予定部署の活動内容を紹介するページです。"
+>
+	<section class="page-hero visual" style={`--hero-image: url("${officeImageUrl}")`}>
+		<div class="hero-copy">
+			<div class="hero-logo">
+				<img src={logoUrl} alt="KOSHO HOLDINGS" />
+			</div>
+			<p class="eyebrow">Departments</p>
+			<h1 class="page-title">部署紹介</h1>
+			<p class="lead">
+				インターン生は、広報、システム、労務、新規事業開拓などの領域で実務に取り組みます。
+				学習で終わらず、社内外に影響する成果物をつくることを目指します。
+			</p>
+			<div class="button-row">
+				<a class="button primary" href="/">募集要項へ戻る</a>
+				<a class="button secondary" href="/contact/">質問する</a>
+			</div>
+		</div>
+		<aside class="visual-panel">
+			<h2>WHAT YOU'LL DO</h2>
+			<p>
+				各課に所属して業務を進めつつ、週次MTGで進捗報告、提案、タスク選定を行います。
+				新規事業開拓は今後さらに拡張予定です。
+			</p>
+		</aside>
+	</section>
+
+	<section class="section light">
+		<p class="section-kicker">Job</p>
+		<h2 class="section-heading">ジョブ内容</h2>
+		<div class="card-grid four">
+			<article class="card">
+				<strong>Web Marketing</strong>
+				<h3>広報課</h3>
+				<p>
+					SNSなどのデジタル広告の企画、運用、ライティング業務に取り組みます。
+					採用広報や店舗公式アカウントの発信改善も担当します。
+				</p>
+			</article>
+			<article class="card">
+				<strong>HR</strong>
+				<h3>人事・労務課</h3>
+				<p>
+					採用プロセスの改善、企業イベントの企画、取引先との会議補助などを行います。
+					労務領域では店舗掲示物や助成金申請なども扱います。
+				</p>
+			</article>
+			<article class="card">
+				<strong>System</strong>
+				<h3>システム課</h3>
+				<p>
+					社内の不便をシステム面から改善する開発、運用を担当します。
+					社内文書検索システムの制作、導入、AI活用による業務改善などを想定しています。
+				</p>
+			</article>
+			<article class="card">
+				<strong>New Business</strong>
+				<h3>新規事業開拓</h3>
+				<p>
+					新規プロジェクトのリサーチ、企画立案、予算削減、戦略実行に関わります。
+					コミュニティ形成や改善提案など、新しい取り組みの立ち上げを担います。
+				</p>
+			</article>
+		</div>
+		<div class="skill-pills" aria-label="身につくスキル">
+			<span>ロジカルシンキング</span>
+			<span>コミュニケーション力</span>
+			<span>課題解決力</span>
+			<span>デザイン思考</span>
+			<span>プログラミング実装力</span>
+		</div>
+	</section>
+
+	<section class="section blue">
+		<p class="section-kicker">Results</p>
+		<h2 class="section-heading">これまでの実績</h2>
+		<div class="card-grid">
+			<article class="card">
+				<strong>広報課</strong>
+				<h3>Instagram運用</h3>
+				<p>
+					1年間のInstagram運用でフォロワー1,900人超。現在は天壇東京公式と天壇1965公式の2つを運用中です。
+				</p>
+			</article>
+			<article class="card">
+				<strong>システム課</strong>
+				<h3>社内検索とAI活用</h3>
+				<p>
+					社内文書検索システムの制作、導入による業務効率化を推進。AIを活用した業務改善も実行しています。
+				</p>
+			</article>
+			<article class="card">
+				<strong>労務課</strong>
+				<h3>制度・掲示物改善</h3>
+				<p>
+					約100万円の助成金申請、店舗掲示チラシの作成、福利厚生の見直しによる従業員満足度向上に取り組みました。
+				</p>
+			</article>
+		</div>
+	</section>
+
+	<section class="section deep">
+		<div class="split">
+			<div>
+				<p class="section-kicker">How We Work</p>
+				<h2 class="section-heading">活動の進め方</h2>
+			</div>
+			<div>
+				<p>
+					研修期間では財務会計、マーケティング、データ管理などのコンテンツを学びます。
+					その後、研修テストや研修用プロジェクトを経て、各課所属として業務を開始します。
+				</p>
+				<p>
+					業務開始後は、週1回の定例MTGで前週タスクの進捗報告や提案を行い、
+					今週取り組むタスクを選定します。
+				</p>
+				<div class="note-box">
+					<strong>新規事業開拓について</strong>
+					<p>
+						新規事業立ち上げに関わる部署は追加開設予定です。
+						詳細なテーマや参加条件は確定次第、このページに追記します。
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+</Layout>
