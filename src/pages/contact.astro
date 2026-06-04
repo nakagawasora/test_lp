@@ -1,5 +1,8 @@
 ---
 import Layout from '../layouts/Layout.astro';
+
+const contactFormUrl =
+	'https://docs.google.com/forms/d/e/1FAIpQLSdzTKblIKvDJjqMTiRy-0OegSCrUjX2rkEzpJI-4WBPnecGNA/viewform?usp=publish-editor';
 ---
 
 <Layout
@@ -13,18 +16,18 @@ import Layout from '../layouts/Layout.astro';
 			<h1 class="page-title">お問い合わせ</h1>
 			<p class="lead">
 				応募前の質問、部署ごとの活動内容、参加スケジュールなどについて相談できるページです。
-				現時点では土台として静的フォームを配置し、あとからGoogle FormやPages Functionsに差し替えられる形にしています。
+				以下のフォームからお問い合わせ内容を送信してください。
 			</p>
 			<div class="button-row">
 				<a class="button primary" href="/">募集要項を見る</a>
-				<a class="button secondary" href="/departments/">部署紹介を見る</a>
+				<a class="button secondary" href="/departments/">インターン内容を見る</a>
+				<a class="button secondary" href={contactFormUrl} target="_blank" rel="noreferrer">お問い合わせフォームへ</a>
 			</div>
 		</div>
 		<aside class="hero-panel">
 			<p class="section-kicker">For Applicants</p>
 			<p>
-				フォーム送信機能は未接続です。運用時にはGoogle Formへのリンク設置、
-				またはCloudflare Pages Functionsなどで送信処理を追加します。
+				応募前に気になることや、仕事内容について確認したいことがあれば、お気軽にお問い合わせください。
 			</p>
 		</aside>
 	</section>
@@ -32,38 +35,12 @@ import Layout from '../layouts/Layout.astro';
 	<section class="section light">
 		<p class="section-kicker">Inquiry Form</p>
 		<h2 class="section-heading">質問フォーム</h2>
-		<form class="contact-form" action="#" method="post">
-			<label>
-				お名前
-				<input type="text" name="name" placeholder="例: 京都 太郎" />
-			</label>
-			<label>
-				メールアドレス
-				<input type="email" name="email" placeholder="example@example.com" />
-			</label>
-			<label>
-				お問い合わせ種別
-				<select name="topic">
-					<option value="">選択してください</option>
-					<option value="entry">応募について</option>
-					<option value="department">部署について</option>
-					<option value="schedule">参加日程について</option>
-					<option value="other">その他</option>
-				</select>
-			</label>
-			<label>
-				お問い合わせ内容
-				<textarea name="message" placeholder="質問内容を入力してください"></textarea>
-			</label>
-			<button class="button dark" type="button">送信する</button>
-		</form>
-		<div class="note-box">
-			<strong>実装メモ</strong>
-			<p>
-				このボタンは現時点では送信処理を行いません。
-				問い合わせ用Google FormのURLが決まったらボタンリンクへ変更するか、
-				Pages FunctionsでPOST先を実装します。
-			</p>
+		<p class="lead">
+			お問い合わせはGoogle Formで受け付けています。
+			応募前の不安や、部署・勤務条件についての質問はこちらから送信してください。
+		</p>
+		<div class="button-row">
+			<a class="button dark" href={contactFormUrl} target="_blank" rel="noreferrer">Google Formを開く</a>
 		</div>
 	</section>
 </Layout>

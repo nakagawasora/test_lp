@@ -3,20 +3,21 @@ import Layout from '../layouts/Layout.astro';
 
 const logoUrl = 'https://www.k-kosho.co.jp/common/img/logo_main.png';
 const officeImageUrl = 'https://www.k-kosho.co.jp/img/ph_sec07_02.jpg';
+const teamImageUrl = '/intern-team.jpg';
 ---
 
 <Layout
 	page="departments"
-	title="部署紹介 | 京大生限定長期インターンシップ | 株式会社晃商HD"
-	description="システム課、広報課、労務課、新規事業立ち上げ予定部署の活動内容を紹介するページです。"
+	title="インターン内容 | 京大生限定長期インターンシップ | 株式会社晃商HD"
+	description="株式会社晃商HDの長期インターンシップで取り組む内容、ビジョン、活動の進め方を紹介するページです。"
 >
 	<section class="page-hero visual" style={`--hero-image: url("${officeImageUrl}")`}>
 		<div class="hero-copy">
 			<div class="hero-logo">
 				<img src={logoUrl} alt="KOSHO HOLDINGS" />
 			</div>
-			<p class="eyebrow">Departments</p>
-			<h1 class="page-title">部署紹介</h1>
+			<p class="eyebrow">Internship Program</p>
+			<h1 class="page-title">インターン内容</h1>
 			<p class="lead">
 				インターン生は、広報、システム、労務、新規事業開拓などの領域で実務に取り組みます。
 				学習で終わらず、社内外に影響する成果物をつくることを目指します。
@@ -33,6 +34,38 @@ const officeImageUrl = 'https://www.k-kosho.co.jp/img/ph_sec07_02.jpg';
 				新規事業開拓は今後さらに拡張予定です。
 			</p>
 		</aside>
+	</section>
+
+	<section class="section blue">
+		<div class="split">
+			<div>
+				<p class="section-kicker">Vision</p>
+				<h2 class="section-heading">インターンのビジョン</h2>
+			</div>
+			<div class="profile-box">
+				<p class="section-kicker">Our Vision</p>
+				<h3>晃商の新しい未来をインターン生と共に作っていく</h3>
+				<p>
+					創業から積み重ねてきた実行力に、学生ならではの視点と挑戦心を掛け合わせ、
+					既存事業の改善から新規プロジェクトの立ち上げまで、晃商の次の可能性を一緒に形にします。
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="section light">
+		<div class="team-photo-block">
+			<img src={teamImageUrl} alt="インターン生と社員の集合写真" />
+			<div>
+				<p class="section-kicker">Team Atmosphere</p>
+				<h2 class="section-heading">堅すぎず、ちゃんと本気で。</h2>
+				<p>
+					社員とインターン生の距離が近く、質問や相談をしながら進められる環境です。
+					実務に挑戦しながらも、同じチームの仲間として一緒に成長していく雰囲気を大切にしています。
+					中には未経験からシステム課に入った人もいます。挑戦が奨励される環境です。
+				</p>
+			</div>
+		</div>
 	</section>
 
 	<section class="section light">
@@ -127,8 +160,8 @@ const officeImageUrl = 'https://www.k-kosho.co.jp/img/ph_sec07_02.jpg';
 				<div class="note-box">
 					<strong>新規事業開拓について</strong>
 					<p>
-						新規事業立ち上げに関わる部署は追加開設予定です。
-						詳細なテーマや参加条件は確定次第、このページに追記します。
+						新規事業立ち上げに関わる部署は今後さらに開設予定です。
+						手をあげればあなたもプロジェクトマネージャーになれるかも？
 					</p>
 				</div>
 			</div>

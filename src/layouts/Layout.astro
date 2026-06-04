@@ -24,7 +24,7 @@ const {
 			</a>
 			<nav class="nav" aria-label="サイトナビゲーション">
 				<a class={page === 'requirements' ? 'active' : ''} href="/">募集要項</a>
-				<a class={page === 'departments' ? 'active' : ''} href="/departments/">部署紹介</a>
+				<a class={page === 'departments' ? 'active' : ''} href="/departments/">インターン内容</a>
 				<a class={page === 'contact' ? 'active' : ''} href="/contact/">お問い合わせ</a>
 			</nav>
 		</header>
@@ -147,6 +147,9 @@ const {
 		letter-spacing: 0;
 		line-height: 0.98;
 		margin: 28px 0;
+		max-width: 1080px;
+		overflow-wrap: anywhere;
+		text-wrap: balance;
 	}
 
 	:global(.lead) {
@@ -213,6 +216,7 @@ const {
 		letter-spacing: 0;
 		line-height: 1.18;
 		margin: 14px 0 34px;
+		text-wrap: balance;
 	}
 
 	:global(.split) {
@@ -407,6 +411,20 @@ const {
 		padding: clamp(24px, 4vw, 38px);
 	}
 
+	:global(.profile-box.has-photo) {
+		align-items: center;
+		display: grid;
+		gap: 28px;
+		grid-template-columns: minmax(160px, 240px) 1fr;
+	}
+
+	:global(.profile-box.has-photo > img) {
+		aspect-ratio: 4 / 5;
+		display: block;
+		object-fit: cover;
+		width: 100%;
+	}
+
 	:global(.voice-card) {
 		align-items: center;
 		background: #ffffff;
@@ -545,6 +563,15 @@ const {
 		resize: vertical;
 	}
 
+	:global(.form-frame) {
+		background: #ffffff;
+		border: 1px solid rgba(6, 26, 61, 0.16);
+		display: block;
+		height: 860px;
+		max-width: 760px;
+		width: 100%;
+	}
+
 	.footer {
 		align-items: center;
 		background: #061a3d;
@@ -600,6 +627,14 @@ const {
 
 		:global(.voice-photo) {
 			max-width: 180px;
+		}
+
+		:global(.profile-box.has-photo) {
+			grid-template-columns: 1fr;
+		}
+
+		:global(.profile-box.has-photo > img) {
+			max-width: 260px;
 		}
 	}
 
