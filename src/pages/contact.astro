@@ -5,6 +5,9 @@ const contactFormUrl =
 	'https://docs.google.com/forms/d/e/1FAIpQLSdzTKblIKvDJjqMTiRy-0OegSCrUjX2rkEzpJI-4WBPnecGNA/viewform?usp=publish-editor';
 ---
 
+// Added wrapper div for complete content to ensure uniform design
+<div class="internship">
+
 <Layout
 	page="contact"
 	title="お問い合わせ | 京大生限定長期インターンシップ | 株式会社晃商HD"
@@ -19,9 +22,7 @@ const contactFormUrl =
 				以下のフォームからお問い合わせ内容を送信してください。
 			</p>
 			<div class="button-row">
-				<a class="button primary" href="/">募集要項を見る</a>
-				<a class="button secondary" href="/departments/">インターン内容を見る</a>
-				<a class="button secondary" href={contactFormUrl} target="_blank" rel="noreferrer">お問い合わせフォームへ</a>
+				<a class="button secondary" href={contactFormUrl} target="_blank" rel="noreferrer">質問する</a>
 			</div>
 		</div>
 		<aside class="hero-panel">
@@ -30,17 +31,18 @@ const contactFormUrl =
 				応募前に気になることや、仕事内容について確認したいことがあれば、お気軽にお問い合わせください。
 			</p>
 		</aside>
+
 	</section>
 
 	<section class="section light">
 		<p class="section-kicker">Inquiry Form</p>
-		<h2 class="section-heading">質問フォーム</h2>
+		<h2 class="section-heading">ご質問はこちらから</h2>
 		<p class="lead">
 			お問い合わせはGoogle Formで受け付けています。
 			応募前の不安や、部署・勤務条件についての質問はこちらから送信してください。
 		</p>
 		<div class="button-row">
-			<a class="button dark" href={contactFormUrl} target="_blank" rel="noreferrer">Google Formを開く</a>
+			<a class="button dark" href={contactFormUrl} target="_blank" rel="noreferrer">質問する</a>
 		</div>
 	</section>
 </Layout>
